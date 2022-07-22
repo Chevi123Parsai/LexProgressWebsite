@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-LexProgress</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class='sub-header'>
+        <nav>
+            <a href="index.html">
+                <img src="LEX PROGRESS-logos_transparent.png" alt="LexProgress Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <!-- close icon -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="article.html">ARTICLES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="featured.html">FEATURED</a></li>
+                    <!-- <li><a href="academic_block.html">ACADEMIC BLOCK</a></li> -->
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <!-- menu icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>CONTACT US</h1>
+
+    </section>
+
+    <!-- CONTACT US content  -->
+
+    <section class="location">
+        <h3 class="contactheading">OUR ADDRESS</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.74934683295!2d77.40589145!3d23.199409700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1658342099590!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="googlemap"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+
+
+        <div class="row">
+            <div class="contact-col">
+                <h3 class="contactheading">CONTACT US</h3>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>ABC Building, Kolar Road </h5>
+                        <p>Bhopal, Madhya Pradesh</p>
+                    </span>
+                </div>
+
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91-9999999999</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info.lexprogress@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <h3 class="contactheading">SEND US YOUR QUERY</h3>
+                <form action="formhandler.php" method="post">
+
+                    <input type="text" name="name" placeholder="Enter your Name*" required>
+                    <input type="email" name="email" placeholder="Enter Email Address*" required>
+                    <input type="text" name="subject" placeholder="Enter your Subject*" required>
+
+                    <textarea name="message" placeholder="Message*" rows="8" required></textarea>
+                    <p>* represents required fields</p>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer section  -->
+
+    <section class="footer">
+        <div class="footertext">
+            <h4>ABOUT US</h4>
+            <p>
+                LexProgress is a one-of-a-kind platform that offers youthful legal minds with a stage where they can
+                step up to present their findings.
+
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+            <p class="linkedinid">
+                Copyright@2022 by LexProgress.
+                <br>
+                Made with <i class="fa fa-heart"></i> by <a
+                    href="https://in.linkedin.com/in/akshat-gupta-5035b7171?original_referer=https%3A%2F%2Fwww.google.com%2F">Akshat
+                    Gupta</a> and <a
+                    href="https://in.linkedin.com/in/chevi-parsai-25a326209?original_referer=https%3A%2F%2Fwww.google.com%2F">Chevi
+                    Parsai</a>
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- JS code to show the menu bar in phone  -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu() {
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+
+</html>
